@@ -1,0 +1,205 @@
+@include desktop() {
+
+
+
+	@keyframes k-who {
+		0% {
+			color: black;
+			background-color: black;
+			padding-top: 150px;
+			margin-bottom: -300px;
+		}
+	
+		30% {
+			
+			margin-bottom: -300px;
+			
+		}
+	
+		85% {
+			margin-bottom: -300px;
+		}
+	}
+	
+}
+
+@include laptop() {
+	.who-am-i-inner {
+		padding: 20px;
+		&-content {
+			width: 100%;
+			order: 2;
+			
+		}
+		&-image {
+			width: 100%;
+			max-width: 436px;
+			margin: auto;
+			order: 1;
+			margin-bottom: 50px;
+			&-text {
+				bottom: -120px;
+				right: -110px;
+			}
+			
+		}
+	}
+
+	@keyframes k-who {
+		0% {
+			color: black;
+			background-color: black;
+			padding-top: 150px;
+			margin-bottom: -260px;
+		}
+	
+		30% {
+			
+			margin-bottom: -260px;
+			
+		}
+	
+		85% {
+			margin-bottom: -260px;
+		}
+	}
+}
+
+@media (max-width: 850px) {
+	@keyframes k-who {
+		0% {
+			color: black;
+			background-color: black;
+			padding-top: 150px;
+			margin-bottom: -330px;
+		}
+	
+		30% {
+			
+			margin-bottom: -330px;
+			
+		}
+	
+		85% {
+			margin-bottom: -330px;
+		}
+	}
+}
+
+
+
+@include tablet() {
+	
+}
+
+@media (max-width: 700px) {
+	@keyframes k-who {
+		0% {
+			color: black;
+			background-color: black;
+			padding-top: 150px;
+			margin-bottom: -400px;
+		}
+	
+		30% {
+			
+			margin-bottom: -400px;
+			
+		}
+	
+		85% {
+			margin-bottom: -400px;
+		}
+	}
+}
+
+@include mobile() {
+	.who-am-i-inner {
+		padding: 20px;
+		&-content {
+			margin: 0;
+			padding: 0;
+			width: 100%;
+			order: 2;
+			&-title {
+				font-size: 2rem;
+			}
+			
+			
+		}
+		&-image {
+			width: 100%;
+			max-width: 336px;
+			max-height: 336px;
+			margin: auto;
+			order: 1;
+			margin-bottom: 50px;
+			&-text {
+				position: absolute;
+				bottom: -140px;
+				right: -150px;
+				animation: k-text 8s;
+				transform: scale(0.75);
+			}
+			
+		}
+	}
+
+	@keyframes k-who {
+		0% {
+			color: black;
+			background-color: black;
+			padding-top: 150px;
+			margin-bottom: -320px;
+		}
+	
+		30% {
+			
+			margin-bottom: -320px;
+			
+		}
+	
+		85% {
+			margin-bottom: -320px;
+		}
+	}
+}
+
+
+
+
+.who-am-i-inner {
+	
+	&-content {
+		
+		&-title {
+			font-size: 2rem;
+		}
+		
+	}
+	
+}
+
+
+
+
+@media (max-width: 420px) {
+	@keyframes k-who {
+		0% {
+			color: black;
+			background-color: black;
+			padding-top: 150px;
+			margin-bottom: -400px;
+		}
+	
+		30% {
+			
+			margin-bottom: -400px;
+			
+		}
+	
+		85% {
+			margin-bottom: -400px;
+		}
+	}
+}

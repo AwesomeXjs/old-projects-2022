@@ -1,0 +1,77 @@
+@import '../../../scss/variables';
+
+.arrow-prev,
+.arrow-next {
+	padding: 11px 13px;
+	border-radius: 50%;
+	background-color: #fff;
+	cursor: pointer;
+	transition: $transition;
+	&:active {
+		background-color: $accent;
+	}
+}
+.slider-scrollbar {
+	width: 34px;
+	height: 2px;
+	background-color: #fb791b;
+	position: relative;
+}
+.slider-scrollbar div {
+	background-color: #fff;
+}
+.slider-pagination {
+	color: #fff;
+	max-width: 13px;
+}
+
+.slidesTotal {
+	color: #fff;
+}
+
+.slider {
+	width: 100%;
+	max-width: 1030px;
+	position: relative;
+	max-height: 465px;
+}
+.imgSlide {
+	width: 100%;
+	height: 100%;
+}
+.slide {
+	width: 100%;
+	min-height: 465px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.navigation {
+	position: absolute;
+	bottom: 23px;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 20;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 155px;
+}
+
+@include wide() {
+	//1350px --
+	.slider {
+		max-width: none;
+	}
+}
+
+@include desktop() {
+	// 992px--
+	.slider {
+		max-height: 300px;
+	}
+	.slide {
+		min-height: 300px;
+	}
+}

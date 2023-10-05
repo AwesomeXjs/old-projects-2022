@@ -1,0 +1,144 @@
+// main: style.less
+
+
+.header__inner {
+    padding: 1.8em 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.burger__links {
+    // display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto;
+    display: none; 
+    border-bottom: 1px solid wheat;
+    padding-bottom: 30px;
+}
+
+
+
+
+
+header {
+    padding: .2em;
+    background-color: #000;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    
+}
+
+.header__links {
+    font-size: 1em;
+    font-weight: 400;
+    
+    
+}
+
+.header__link {
+    margin-left: 2.3em;
+    padding-bottom: 5px;
+    &:hover {
+        border-bottom: 2px solid #fff; 
+    }
+}
+
+.header__link:nth-child(2) {
+    margin-left: 3em;
+
+}
+
+.header__link:last-child {
+    padding: 0.71em 1.42em;
+    background: #fff;
+    border: 2px solid transparent;
+    border-radius: 1em;
+    border-bottom: 3px solid transparent;
+    font-weight: 700;
+    color: #000;
+    transition: .5s linear;
+    &:hover {
+        color: #fff;
+        background-color: #000;
+        border: 2px solid #fff;
+    }
+}
+
+.header__logo {
+    padding-top: 0.5em;
+}
+
+.burger__menu {
+    display: none;
+}
+
+@media (max-width: 900px) {
+    .header__inner {
+        display: none;
+    }
+
+    .burger__menu {
+        display: block;
+        text-align: center;
+    }
+
+    .burger__menu {
+        text-align: center;
+        flex-shrink: 0;
+       
+        
+    }
+
+    .burger__logo {
+        margin-bottom: 3em;
+        padding-top: 2em;
+        
+        
+    }
+    .burger__border {
+        border-bottom: 2px solid white;
+    }
+
+    
+
+    .active__burger {
+        display: flex;
+    }
+
+    .burger__link {
+        
+        padding: .5em 0;
+        &:hover {
+            background-color: #fff;
+            color: #000;
+        }
+    }
+    
+
+    
+
+    
+
+    .icons {
+        font-size: 2.5em;
+        position: absolute;
+        top: .6em;
+        right: 1em;
+    }
+
+  
+}
+
+    
+
+    
+    
+
+   
+
+

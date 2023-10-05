@@ -1,0 +1,27 @@
+// main:style.less 
+
+.intro__four {
+    width: 100%;
+    min-height: 600px;
+    background: url("../assets/image/Blue__mount.jpg") center no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    background-attachment: fixed;
+    justify-content: flex-end;
+}
+
+@media (max-width: 900px) {
+    .intro__four {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .intro__four__content {
+        position: static;
+        transform: translate(0, 0);
+    }
+}

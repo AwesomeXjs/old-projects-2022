@@ -1,0 +1,9 @@
+.select {
+	padding: 15px 30px;
+	border-radius: 15px;
+	cursor: pointer;
+	border: 2px solid teal;
+	outline: none;
+	font-size: 1.2rem;
+	font-weight: 700;
+}

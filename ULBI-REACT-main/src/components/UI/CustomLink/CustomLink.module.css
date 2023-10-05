@@ -1,0 +1,12 @@
+.link {
+	font-size: 1.5rem;
+	color: #fff;
+	text-decoration: none;
+	margin: 0 10px;
+	transition: 0.2s linear;
+	border: 2px solid transparent;
+	padding-bottom: 5px;
+}
+.link:hover {
+	border-bottom: 2px solid #fff;
+}

@@ -1,0 +1,24 @@
+@import '../../scss/variables';
+
+.container {
+	max-width: $container-width;
+	margin: 0 auto;
+}
+.footer {
+	background-color: #fff;
+}
+.footerTopWrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 24px 0;
+	font-family: $itemsFont;
+}
+
+@include wide() {
+	//1350px --
+
+	.footerTopWrapper {
+		padding: 24px 20px;
+	}
+}

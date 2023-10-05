@@ -1,0 +1,32 @@
+@include desktop() {
+	.sponsors {
+		&__wrapper {
+			padding: 70px 30px;
+		}
+	}
+}
+
+@include laptop() {
+	
+}
+
+@include tablet() {
+	.sponsors {
+		&-logo {
+			width: 40%;
+			margin: 40px auto;
+			
+		}
+	}
+}
+
+@include mobile() {
+	.sponsors {
+		&-logo {
+			width: 70%;
+			margin: 40px auto;
+		}
+	}
+
+}
+

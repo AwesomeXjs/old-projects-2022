@@ -1,0 +1,123 @@
+// main: style.less
+
+.section {
+    padding: 113px 136px 0 136px;
+}
+
+.section__header {
+    text-align: center;
+    margin-bottom: 42px;
+}
+
+.section__title {
+    font-size: 2.85em;
+}
+
+.section__subtitle {
+    font-size: 1.7em;
+}
+.section__blocks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.section__item {
+    width: 49.6%;
+    min-height: 600px;
+    margin-bottom: 1.2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 3.4em;
+    padding-left: 2.1em;
+    &:hover {
+        filter: grayscale();
+    }
+}
+
+.item__one {
+    background: url(../assets/image/black__trio.jpg) center no-repeat;
+    background-size: cover;
+    
+}
+.item__two {
+    background: url(../assets/image/black__trio.jpg) center no-repeat;
+    background-size: cover;
+    
+}
+.item__three {
+    background: url(../assets/image/Forest.jpg) center no-repeat;
+    background-size: cover;
+    
+}
+.item__four {
+    background: url(../assets/image/Olen.jpg) center no-repeat;
+    background-size: cover;
+    
+}
+
+
+
+
+.item__content-title {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.item__content-subtitle {
+    color: #C0C0C0;
+    margin-top: 1em;
+}
+
+.item__button {
+    margin-top: 3.2em;
+}
+
+.item__content-btn {
+    
+    padding: 1em 1em 1em 4em;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 1.5em;
+    color: #000;
+    position: relative;
+    
+    &:hover {
+        background-color: black;
+        color: #fff;
+        border: 1px solid #fff;
+    }
+
+}
+
+.item__content-btn::before {
+    content: "";
+    display: inline-block;
+    background: #000;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    position: absolute;
+    left: 5%;
+    top: 6%;
+}
+
+.item__content-btn:hover.item__content-btn::before {
+    background-color: #fff;
+}
+
+.section__item__content {
+    max-width: 500px;
+}
+
+
+@media (max-width: 900px) {
+    .section__item {
+        width: 100%;
+    }
+
+    .section {
+        padding: 0;
+    }
+}

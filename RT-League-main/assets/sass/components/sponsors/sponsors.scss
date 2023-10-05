@@ -1,0 +1,42 @@
+.sponsors {
+	background-color: $accent;
+	&-logo {
+		width: 20%;
+	}
+	&__wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		padding: 70px 0;
+	}
+}
+
+.sponsors-1 {
+	opacity: 0;
+	transition: 1s ease-in-out;
+	&-active {
+		opacity: 1;
+	}
+}
+.sponsors-2 {
+	opacity: 0;
+	transition: 1s ease-in-out;
+	&-active {
+		opacity: 1;
+	}
+}
+.sponsors-3 {
+	opacity: 0;
+	transition: 1s ease-in-out;
+	&-active {
+		opacity: 1;
+	}
+}
+.sponsors-4 {
+	opacity: 0;
+	transition: 1s ease-in-out;
+	&-active {
+		opacity: 1;
+	}
+}

@@ -1,0 +1,33 @@
+@import '../../../scss/variables';
+
+.inputWrapper {
+	width: 100%;
+	max-width: 675px;
+	display: flex;
+	align-items: center;
+	background-color: #fff;
+	padding: 13px;
+	border-radius: $radius;
+	margin-right: 92px;
+}
+.input {
+	width: 100%;
+	max-width: 675px;
+	outline: none;
+	border: none;
+}
+.input::placeholder {
+	color: $placeholder-text;
+	font-family: $userfont;
+}
+.searchIcon {
+	background-color: #fff;
+	cursor: pointer;
+}
+
+@include wide() {
+	//1350px --
+	.inputWrapper {
+		display: none;
+	}
+}

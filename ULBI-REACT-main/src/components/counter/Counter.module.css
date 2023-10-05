@@ -1,0 +1,34 @@
+.input {
+	width: 100%;
+	padding: 10px;
+	font-size: 1.3rem;
+}
+.input::placeholder {
+	font-size: 1.3rem;
+}
+.input:focus {
+	box-shadow: 0 0 20px 3px rgb(55, 55, 215);
+
+	outline: none;
+}
+
+.button {
+	padding: 10px 20px;
+	cursor: pointer;
+	margin: 10px 10px;
+	border-radius: 16px;
+	font-size: 1.5rem;
+}
+
+.increment {
+	background-color: rgb(137, 204, 137);
+}
+.increment:active {
+	background-color: rgb(98, 153, 98);
+}
+.decrement {
+	background-color: rgb(193, 94, 94);
+}
+.decrement:active {
+	background-color: rgb(135, 64, 64);
+}

@@ -1,0 +1,143 @@
+
+.recent__work-btn {
+	display: flex;
+	align-items: center;
+	color: $accent;
+	padding: 10px 0;
+	border-radius: 10px;
+	transition: .5s;
+	overflow: hidden;
+	text-transform: uppercase;
+	margin-bottom: 51px;
+	&-arrow {
+		transform: rotate(-90deg);
+		margin-right: 35px;
+		transition: .2s linear;
+	}
+	&-text {
+		font-family: manrope-st, sans-serif;
+	}
+}
+
+
+.recent__work__active-btn {
+	transform: rotate(0deg);
+}
+
+.UI-des-title {
+	font-size: 2.2rem;
+	font-weight: 500;
+	margin-bottom: 42px;
+}
+
+.UI__designs-inner {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding-bottom: 80px;
+	
+}
+
+.UI__designs-item {
+	width: 45%;
+	&-img {
+		display: flex;
+		justify-content: center;
+		background-color: $background-special;
+		padding: 56px;
+		border-radius: 12px 12px 0 0;
+	}
+	&-content {
+		padding: 60px 50px;
+		background-color: rgba(70, 70, 70, 0.3);
+		border-radius: 12px;
+		opacity: 0;
+		margin-bottom: -250px;
+		&-active {
+			animation: k-ui-item 1s 1;
+			opacity: 1;
+			margin-bottom: 30px;
+		}
+		&-text {
+			opacity: 0;
+			&-active {
+				animation: k-ui-text 1s 1;
+				opacity: 1;
+			}
+		}
+	}
+	&-text {
+		background-color: rgba(70, 70, 70, 0.3);
+		padding: 20px;
+		border-radius: 0 0 12px 12px;
+		cursor: pointer;
+		transition: .2s linear;
+		
+		&:hover {
+			border-radius: 12px;
+		}
+		&-title {
+			font-size: 1.2rem;
+			font-weight: 400;
+		}
+		&-subtitle {
+			font-size: 1rem;
+			color: $special-color-text;
+			overflow: hidden;
+		}
+		&-sub-arrow {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		&-arrow {
+			font-size: 1.5rem;
+			transition: .2s linear;
+		}
+	}
+	&-image {
+		width: 100%;
+		height: auto;
+		border-radius: 22px;
+		box-shadow: 2px 2px 20px 10px rgba(0, 0, 0, 0.2);
+	}
+	
+}
+
+.active-ui-des-btn {
+	transform: rotate(90deg);
+	color: $accent;
+}
+
+
+
+
+
+
+
+
+
+.UI__designs-item-img3 {
+	display: flex;
+}
+
+.phone1 {
+	width: 50%;
+}
+
+.phone2 {
+	width: 50%;
+}
+
+.UI__designs-item-img4 {
+	display: flex;
+}
+
+.phone3 {
+	width: 50%;
+}
+
+.phone4 {
+	width: 50%;
+}
+

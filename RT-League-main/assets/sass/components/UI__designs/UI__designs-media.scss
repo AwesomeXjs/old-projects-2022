@@ -1,0 +1,68 @@
+@include desktop() {
+	.recent__work-btn {
+		padding-left: 20px;
+	}
+
+	.UI__designs-title {
+		text-align: center;
+	}
+	.UI__designs-item {
+		width: 45%;
+		margin: 0 auto;
+		margin-bottom: 50px;
+		&-content {
+			padding: 20px;
+		}
+	}
+
+}
+
+@include laptop() {
+	.UI-des-title {
+		margin-bottom: 0px;
+	}
+	.UI__designs-item {
+		
+		width: 80%;
+		margin: 80px auto;
+		
+		&-content {
+			padding: 20px;
+			&-text {
+				font-size: .8rem;
+			}
+			
+		}
+		&-text {
+			&-title {
+				font-size: 1rem;
+			}	
+			&-subtitle {
+				font-size: .8rem;
+			}
+			&-arrow {
+				font-size: 1rem;
+			}
+		}
+	}
+}
+
+@include tablet() {
+	
+	.UI__designs-item {
+		margin: 60px auto ;
+		&-img {
+			padding: 10px;
+		}
+	}
+}
+
+@include mobile() {
+	.UI-des-title {
+		margin-bottom: 20px;
+	}
+	.UI__designs-item {
+		margin: 30px auto ;
+	}
+}
+

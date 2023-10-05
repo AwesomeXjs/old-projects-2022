@@ -1,0 +1,52 @@
+@media (max-width: 1450px) {
+	.slider__item {
+		max-width: 1200px;
+	}
+
+}
+
+@media (max-width: 1380px) {
+	.slider__item {
+		max-width: 1100px;
+	}
+
+	.slider__item-inner {
+		&-content {
+			&-title {
+				font-size: 1.4rem;
+				line-height: 1.5;
+			}
+			
+		}
+	}
+
+}
+@include desktop() {
+	.slider__item {
+		max-width: 1000px;
+	}
+	
+}
+
+@media (max-width: 1180px) {
+		.slider__item {
+			max-width: 880px;
+		}
+	
+	}
+
+
+@include laptop() {
+	.slider {
+		display: none;
+	}
+}
+
+@include tablet() {
+	
+}
+
+@include mobile() {
+	
+}
+

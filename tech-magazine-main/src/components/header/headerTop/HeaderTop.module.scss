@@ -1,0 +1,43 @@
+@import '../../../scss/variables';
+
+.container {
+	max-width: $container-width;
+	margin: 0 auto;
+}
+.headerTop {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: $special-text;
+	padding: 10px 0;
+	background-color: #fff;
+}
+
+.location,
+.contact {
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	padding: 3px 13px;
+	border: 1px solid #e0e0e0;
+	border-radius: 30px;
+}
+.locationIcon {
+	margin-right: 5px;
+}
+.phoneIcon {
+	width: 16px;
+	height: 16px;
+	margin-right: 12px;
+}
+.contactTitle {
+	color: #4f4f4f;
+	margin-right: 8px;
+}
+
+@include tablet() {
+	// 768px--
+	.headerTop {
+		display: none;
+	}
+}

@@ -1,0 +1,31 @@
+@import '../../scss/variables';
+
+.wrapper {
+	min-height: 467px;
+	display: flex;
+	margin-bottom: 32px;
+}
+.container {
+	max-width: $container-width;
+	margin: 0 auto;
+}
+
+@include hd() {
+	//1440px ++
+}
+
+@include wide() {
+	//1350px --
+
+	.slider {
+		max-width: none;
+	}
+}
+
+@include desktop() {
+	// 992px--
+
+	.wrapper {
+		min-height: 200px;
+	}
+}

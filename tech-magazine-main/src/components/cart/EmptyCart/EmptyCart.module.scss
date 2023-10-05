@@ -1,0 +1,45 @@
+@import '../../../scss/variables';
+
+.wrapper {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	color: #fff;
+	font-size: 2rem;
+}
+.emptyIcon {
+	font-size: 10rem;
+	margin-bottom: 50px;
+}
+.emptyBtn {
+	color: $accent;
+	padding: 10px 20px;
+	border-radius: $radius;
+	cursor: pointer;
+	transition: $transition;
+	&:active {
+		transform: scale(0.8);
+	}
+}
+
+@include desktop() {
+	// 992px--
+	.wrapper {
+		text-align: center;
+	}
+	.wrapper h1 {
+		margin-bottom: 20px;
+	}
+}
+@include tablet() {
+	// 768px--
+}
+@include mobile() {
+	// 568px--
+}
+@include mobile-s() {
+	// 414px--
+}

@@ -1,0 +1,44 @@
+@import '../../../scss/variables';
+
+.company {
+	display: flex;
+	flex-direction: column;
+	width: 17%;
+}
+.companyTitle {
+	font-weight: 800;
+	margin-bottom: 23px;
+}
+.companyLink {
+	color: $special-text;
+	font-family: $itemsFont;
+	margin-bottom: 8px;
+	font-size: 12px;
+	border-bottom: 1px solid transparent;
+	transition: $transition;
+	&:hover {
+		border-bottom: 1px solid $special-text;
+	}
+}
+
+@include wide() {
+	//1350px --
+
+	.company {
+		width: 33%;
+	}
+}
+
+@include tablet() {
+	// 768px--
+	.company {
+		width: 50%;
+	}
+}
+@include mobile() {
+	// 568px--
+	.company {
+		width: 100%;
+		align-items: center;
+	}
+}

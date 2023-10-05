@@ -1,0 +1,77 @@
+// main: style.less
+
+.footer__section {
+    padding: 3em 0;
+}
+
+.footer__section__inner {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer__section__inner-text {
+    width: 50%;
+}
+
+.footer__section__inner-form {
+    width: 50%;
+    display: flex;
+}
+
+.title2 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.input__footer {
+    width: 70%;
+    height: 50px;
+    font-style: italic;
+    font-size: 2em;
+    padding: 1em;
+    &:focus {
+        outline: none;
+        background-color: rgb(156, 154, 154);
+    }
+
+    
+}
+
+.btn__footer {
+    width: 30%;
+    border: 5px solid #fff;
+    height: 50px;
+    padding: 5px;
+    background-color: #000;
+    cursor: pointer;
+}
+
+@media (max-width: 900px) {
+    
+
+    .footer__section__inner-text {
+        text-align: center;
+        width: 100%;
+    }
+
+    .footer__section__inner-form {
+        width: 100%;
+        display: flex;
+        padding: 2em 5em;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .footer__section__inner-text {
+        text-align: center;
+        width: 100%;
+    }
+    .footer__section__inner-form {
+        width: 100%;
+        display: flex;
+        padding: 2em 1em;
+    }
+}
+

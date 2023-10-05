@@ -1,0 +1,25 @@
+.post {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	max-width: 500px;
+	margin: 0 auto;
+	background-color: rgb(52, 108, 168);
+	padding: 20px;
+	border-radius: 20px;
+	border: 2px solid #000;
+	color: #fff;
+	margin-bottom: 20px;
+}
+
+.button {
+	padding: 10px 20px;
+	cursor: pointer;
+	margin: 10px 10px;
+	border-radius: 16px;
+	font-size: 1.5rem;
+	background-color: rgb(193, 94, 94);
+}
+.button:active {
+	background-color: rgb(141, 66, 66);
+}

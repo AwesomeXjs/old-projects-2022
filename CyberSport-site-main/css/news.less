@@ -1,0 +1,155 @@
+// main:style.less
+
+.news {
+    padding: 130px 0;
+}
+
+.news__header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 68px;
+}
+
+.news__logo {
+    margin-bottom: 25px;
+}
+
+.news__title-font {
+    font-weight: 400;
+    font-size: 4em;
+}
+
+.news__btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.news__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.news__block-one {
+    width: 47%;
+}
+
+.news__block-two {
+    width: 47%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.data__news-block-one {
+    color: #57B8FF;
+    font-weight: 400;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.block__one-text {
+    font-size: 2.3em;
+    font-weight: 400;
+}
+.block__one-image {
+    margin-bottom: 60px;
+}
+
+.block__one-img {
+    width: 100%;
+    height: auto;
+}
+
+.block__two-image {
+    margin-bottom: 30px;
+}
+
+.block__two-img {
+    width: 100%;
+    height: auto;
+}
+
+.news__block-two__item {
+    width: 48%;
+    transition: .5s linear;
+    padding: 20px;
+    border-radius: 20px;
+    &:hover {
+        background-color: #FDD04A;
+    }
+    
+}
+
+.news__block-two__item:hover .block__two-date {
+    color: #000;
+}
+
+.news__block-two__item:hover .block__two-subtitle {
+    color: #000;
+}
+
+.block__two-date {
+    color: #57B8FF;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.block__two-subtitle {
+    font-size: 1.5em;
+}
+
+@media (max-width: 950px) {
+    .news {
+        padding: 50px 0;
+    }
+
+    .news__header {
+        margin-bottom: 30px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .news__title-font {
+        font-weight: 400;
+        font-size: 2em;
+        margin-bottom: 1em;
+        
+    }
+    .news__btn {
+        display: flex;
+        
+    }
+
+    .news__block-one {
+        width: 100%;
+        margin-bottom: 2em;
+    }
+    
+    .news__block-two {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .news__block-two__item {
+        border: 1px solid white;
+        font-size: .8em;
+    }
+
+    .block__one-image {
+        margin-bottom: 20px;
+    }
+
+    .block__one-subtitle {
+        text-align: center;
+        
+        font-weight: 400;
+    }
+    
+}

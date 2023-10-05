@@ -1,0 +1,63 @@
+@import "./common/fonts";
+@import "./common/reset";
+@import "./common/variables";
+@import "./common/extend";
+@import "./common/mixins";
+@import "./common/media-mixins";
+@import "./common/animations";
+@import "./common/if";
+
+html {
+  font-size: $regular-text;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: $userfont;
+	line-height: $lineheight;
+	color: $text;
+	position: relative;
+	overflow-x: hidden;
+	background-color: black;
+
+	
+	
+}
+
+.main__background {
+	background: url(../image/background.jpg) no-repeat;
+	background-position: center 15%;
+	background-size: cover;
+	
+}
+
+
+
+.container_content{
+	max-width: $content-width;
+	margin: 0 auto;
+	z-index: 5;
+}
+
+
+
+
+image {
+  @extend %example;
+}
+
+
+@import "./components/header/header-index";
+@import "./components/WhoAmI/who-am-i-index";
+@import "./components/about_me/about_me-index";
+@import "./components/UI__designs/UI__designs-index";
+@import "./components/social/social-index";
+@import "./components/still-here/still-here-index";
+@import "./components/slider/slider-index";
+@import "./components/sponsors/sponsors-index";
+@import "./components/footer/footer-index";
+
+
+
+// sass --watch assets/sass/style.scss:assets/css/style.css - запуск компилятора

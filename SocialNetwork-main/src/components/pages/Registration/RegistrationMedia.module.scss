@@ -1,0 +1,33 @@
+@include hd_plus() {
+	// 1920px --
+}
+
+@include hd() {
+	//1440px --
+}
+
+@include wide() {
+	//1200px --
+
+	.formWrapper {
+		transform: scale(0.85);
+		max-width: 100%;
+		margin: 0 auto;
+	}
+}
+
+@include desktop() {
+	// 992px--
+}
+@include tablet() {
+	// 768px--
+	.form {
+		min-width: 0;
+	}
+}
+@include mobile() {
+	// 568px--
+}
+@include mobile-s() {
+	// 414px--
+}

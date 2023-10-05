@@ -1,0 +1,93 @@
+@import '../../../scss/variables';
+
+.subscribe {
+	width: 20%;
+	display: flex;
+	flex-direction: column;
+}
+.subscribe h4 {
+	font-weight: 800;
+	margin-bottom: 23px;
+}
+.subsIcons {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 24px;
+}
+.subsItem {
+	margin-right: 16px;
+}
+.description {
+	line-height: 1.4;
+	color: $special-text;
+	font-size: 12px;
+	font-family: $itemsFont;
+	max-width: 217px;
+	margin-bottom: 13px;
+}
+
+.choice {
+	display: flex;
+}
+
+.choiceItem {
+	display: flex;
+	margin-right: 15px;
+	font-size: 15px;
+	align-items: center;
+	cursor: pointer;
+	margin-bottom: 20px;
+}
+.check {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 5px;
+	cursor: pointer;
+	transition: $transition;
+	border: 2px solid #f7f7f7;
+}
+.check span {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	background-color: #fff;
+	border-radius: 50%;
+}
+
+.active {
+	background-color: #fb791b;
+}
+.input {
+	padding: 14px 17px;
+	border-radius: $radius;
+	border: 1px solid #e0e0e0;
+	&::placeholder {
+		color: $placeholder-text;
+	}
+}
+
+@include wide() {
+	//1350px --
+	.subscribe {
+		width: 33%;
+	}
+}
+
+@include tablet() {
+	// 768px--
+	.subscribe {
+		width: 50%;
+	}
+}
+@include mobile() {
+	// 568px--
+	.subscribe {
+		width: 100%;
+		align-items: center;
+	}
+}

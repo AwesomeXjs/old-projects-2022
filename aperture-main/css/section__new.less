@@ -1,0 +1,52 @@
+// main: style.less
+
+.intro__two {
+    width: 100%;
+    min-height: 600px;
+    background: url(../assets/image/Green.jpg) center no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    background-attachment: fixed;
+    justify-content: flex-end;
+}
+
+.intro__two__content {
+    position: absolute;
+    top:50%;
+    right: 4.4em;
+    transform:translate(0, -50%);
+    max-width: 300px;
+}
+
+.intro__two__title {
+    letter-spacing: 2px;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.intro__two__subtitle {
+    color: #C0C0C0;
+}
+
+
+@media (max-width: 900px) {
+    .intro__two {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .intro__two__content {
+        position: static;
+        transform: translate(0, 0);
+        text-align: center;
+        
+    }
+
+    .stat__intro__two {
+        position: static;
+        margin-top: 3em;
+    }
+    
+}

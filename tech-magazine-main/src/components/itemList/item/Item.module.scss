@@ -1,0 +1,143 @@
+@import '../../../scss/variables';
+
+.item {
+	position: relative;
+	width: 19%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 30px;
+	background-color: #fff;
+	border-radius: $radius;
+	margin-bottom: 8px;
+}
+.itemImageWrapper {
+	height: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.itemTitle {
+	max-width: 220px;
+	font-size: 0.8rem;
+	line-height: 1.3;
+	font-weight: 400;
+	margin-bottom: 13px;
+}
+.itemValue {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.itemOldPrice,
+.itemCurrentPrice {
+	line-height: 1;
+}
+.itemOldPrice {
+	text-decoration: line-through;
+	color: $special-text;
+}
+
+.itemCart {
+	width: 40px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	background-color: #00bccc;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+	cursor: pointer;
+	transition: $transition;
+	&:active {
+		transform: scale(0.9);
+		background-color: #059dab;
+	}
+}
+.HitOption,
+.newOption {
+	width: 75px;
+	height: 24px;
+	position: relative;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.discOption,
+.presOption {
+	width: 43px;
+	height: 31px;
+	position: relative;
+	margin-bottom: 3px;
+}
+.HitText {
+	width: 60px;
+	font-size: 10px;
+	font-weight: 800;
+	color: #fff;
+	position: absolute;
+	top: 80%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.discText {
+	position: absolute;
+	top: 65%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 10px;
+	font-weight: 800;
+	color: #fff;
+}
+.itemOption {
+	position: absolute;
+	top: 21px;
+	left: -5px;
+}
+.color {
+	width: 14px;
+	height: 14px;
+	border-radius: 50%;
+	padding: 4px;
+}
+.colorWrapper {
+	padding: 4px;
+	border-radius: 50%;
+	border: 1px solid transparent;
+	cursor: pointer;
+	transition: $transition;
+	&:hover {
+		border: 1px solid #dee0e6;
+	}
+}
+
+.colorOption {
+	position: absolute;
+	top: 50%;
+	right: 16px;
+	transform: translateY(-50%);
+}
+
+@include wide() {
+	//1350px --
+	.item {
+		width: 30%;
+	}
+}
+
+@include desktop() {
+	// 992px--
+	.item {
+		width: 49%;
+	}
+}
+
+@include mobile() {
+	// 568px--
+	.item {
+		width: 100%;
+		margin: 0 auto;
+	}
+}

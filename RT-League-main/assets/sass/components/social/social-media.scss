@@ -1,0 +1,48 @@
+@include desktop() {
+	.social {
+		margin-bottom: 50px;
+		&-title {
+			text-align: center;
+			font-size: 2rem;
+			margin-bottom: 35px;
+		}
+		
+		
+	}
+}
+
+@include laptop() {
+	.social {
+		margin-bottom: 50px;
+		&-title {
+			text-align: center;
+			font-size: 2rem;
+		}
+		&-item {
+			width: 60%;
+			margin: 10px auto;
+		}
+		
+	}
+}
+
+@include tablet() {
+	footer {
+	
+	}
+}
+
+@include mobile() {
+	.social {
+		&-title {
+			text-align: center;
+			font-size: 1.3rem;
+		}
+		&-item {
+			width: 80%;
+			margin: 20px auto;
+			
+		}
+		
+	}
+}

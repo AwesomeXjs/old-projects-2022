@@ -1,0 +1,46 @@
+@import '../../scss/variables';
+
+.header {
+	position: sticky;
+	top: 0;
+	z-index: 100;
+}
+.container {
+	max-width: $container-width;
+	margin: 0 auto;
+}
+.headerMainWrapper {
+	background-color: $accent;
+	padding: 14px 0;
+	margin-bottom: 25px;
+}
+.headerMain {
+	display: flex;
+	align-items: center;
+}
+.logo {
+	margin-right: 85px;
+}
+
+@include wide() {
+	//1350px --
+	.logo {
+		margin-right: 0;
+	}
+	.headerMain {
+		justify-content: space-between;
+		padding: 0 20px;
+	}
+}
+@include tablet() {
+	// 768px--
+	.headerMain {
+		justify-content: space-between;
+	}
+	.logo {
+		max-width: 100px;
+	}
+	.headerMainWrapper {
+		margin-bottom: 0;
+	}
+}

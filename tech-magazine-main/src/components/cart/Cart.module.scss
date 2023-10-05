@@ -1,0 +1,160 @@
+@import '../../scss/variables';
+
+.wrapper {
+	display: flex;
+	padding-top: 160px;
+	height: 100vh;
+	background-color: $accent;
+	flex-direction: column;
+	overflow-y: scroll;
+	padding: 140px 60px;
+}
+.cartItem img {
+	margin-right: 20px;
+	text-align: center;
+}
+
+.logo {
+	max-width: 300px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+}
+.cartTitle {
+	display: flex;
+	justify-content: space-between;
+}
+.title,
+.delete {
+	display: flex;
+}
+
+.headerCart {
+	display: flex;
+	justify-content: space-between;
+}
+.cartValue {
+	display: flex;
+	color: #fff;
+	margin-right: 30px;
+}
+.cartValue h4 {
+	margin-right: 5px;
+}
+.cartItem {
+	display: flex;
+	justify-content: space-between;
+	background-color: #fff;
+	padding: 20px;
+	border-radius: $radius;
+	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+	margin-bottom: 20px;
+	max-width: 800px;
+}
+.description {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.delete {
+	display: flex;
+	align-items: center;
+	text-align: right;
+	justify-content: flex-end;
+	color: #fff;
+	margin-bottom: 20px;
+}
+.delete p {
+	cursor: pointer;
+	transition: $transition;
+	border-bottom: 1px solid transparent;
+	&:hover {
+		border-bottom: 1px solid #fff;
+	}
+}
+.title {
+	display: flex;
+	flex-direction: column;
+	font-size: 0.7rem;
+}
+.title span:first-child {
+	font-weight: 800;
+	font-size: 1.5;
+	margin-right: 50px;
+}
+.titleItem {
+	font-size: 0.8rem;
+	color: $special-text;
+}
+.color span {
+	font-weight: 800;
+	font-size: 1.5rem;
+}
+.colorItem {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+}
+.price {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 0 50px;
+}
+.terminal {
+	display: flex;
+	flex-direction: column;
+}
+
+.increment,
+.decrement {
+	height: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: $accent;
+	padding: 20px;
+	cursor: pointer;
+	border-radius: $radius;
+	color: #fff;
+	transition: $transition;
+	&:active {
+		transform: scale(0.8);
+	}
+}
+.increment {
+	margin-bottom: 10px;
+}
+
+@include desktop() {
+	// 992px--
+	.cartItem {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+	.cartItem img {
+		margin-right: 0;
+		height: 200px;
+		width: 200px;
+	}
+	.terminal {
+		display: flex;
+		flex-direction: row;
+	}
+	.title {
+		text-align: center;
+	}
+	.title span:first-child {
+		margin-right: 0;
+	}
+	.increment {
+		margin-right: 15px;
+	}
+}
+@include tablet() {
+	// 768px--
+	.wrapper {
+		padding: 140px 10px;
+	}
+}

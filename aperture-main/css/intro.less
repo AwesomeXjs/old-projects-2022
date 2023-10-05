@@ -1,0 +1,64 @@
+// main: style.less
+
+.intro {
+    background: url("../assets/image/Intro.jpg") center no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 716px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    background-attachment: fixed;
+    
+    
+}
+
+.intro__text {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+    padding-bottom: 70px;
+    
+}
+
+.intro__suptitle {
+    text-transform: uppercase;
+    font-size: 1em;
+    letter-spacing: 2px;
+}
+
+.intro__title {
+    font-size: 4em;
+
+}
+
+.stat {
+    position: absolute;
+    bottom: 2.85em;
+    right: 2.85em;
+    z-index: 1;
+}
+.stat__links {
+    margin-left: 1.2em;
+}
+
+
+@media (max-width: 900px) {
+    .stat {
+        position: static;
+        text-align: center;
+        padding-bottom: 2em;
+    }
+
+    .intro {
+        margin-bottom: 4em;
+    }
+}
+
+
+
+
+
+
+

@@ -1,0 +1,20 @@
+@include desktop() {
+	
+}
+
+@include laptop() {
+	
+}
+
+@include tablet() {
+	
+}
+
+@include mobile() {
+	.footer-inner {
+		&-title {
+			font-size: 3rem;
+		}
+	}
+}
+

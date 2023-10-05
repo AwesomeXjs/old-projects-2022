@@ -1,0 +1,37 @@
+@import '../../../scss/_variables';
+
+.pageWrapper {
+	animation: openPageA 1s 1;
+}
+.pageToggle {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 2;
+}
+.profileBack {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: -1;
+	background: radial-gradient($accent, #000);
+}
+.profileContentWrapper {
+	width: 90%;
+	min-height: 600px;
+	margin: 0 auto;
+	display: flex;
+}
+
+@keyframes openPageA {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}

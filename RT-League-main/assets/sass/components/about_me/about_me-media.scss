@@ -1,0 +1,78 @@
+@include desktop() {
+	.about__me-btn {
+		padding-left: 20px;
+	}
+	.about__me{
+		&-inner {
+			justify-content: start;
+			&-img {
+				display: flex;
+				width: 100%;
+				align-items: center;
+				justify-content: center;
+				margin-bottom: 30px;
+			}
+			&-sqr {
+				position: absolute;
+				top: 0;
+				left: 60%;
+				z-index: 1000;
+				&:hover {
+					animation: k-spider 2s infinite;
+				}
+			}
+			&-text {
+				width: 100%;
+				align-items: center;
+				
+			}
+
+		}
+		
+	}
+
+}
+
+@include laptop() {
+	
+}
+
+@include tablet() {
+		.about__me {
+			&-inner {
+				&-sqr {
+					display: none;
+				}
+			}
+		}
+}
+
+@include mobile() {
+	.about__me-inner-text {
+		&-row {
+			&-title {
+				font-size: .6rem;
+			}
+			&-subtitle {
+				font-size: 0.6rem;
+			}
+			&-slider {
+				width: 73px;
+				&-2 {
+					width: 60px;
+				}
+				&-3 {
+					width: 60px;
+				}
+				&-4 {
+					width: 105px;
+				}
+				&-5 {
+					width: 49px;
+				}
+			}
+		}
+	}
+	
+}
+

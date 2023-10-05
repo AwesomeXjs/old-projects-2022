@@ -1,0 +1,13 @@
+.input {
+	width: 100%;
+	margin: 0 auto;
+	padding: 15px;
+	border-radius: 20px;
+	outline: none;
+	font-size: 1.5rem;
+	margin-bottom: 10px;
+	border: 2px solid teal;
+}
+.input:focus {
+	box-shadow: 0 0 10px 3px teal;
+}

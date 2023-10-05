@@ -1,0 +1,73 @@
+@import '../scss/variables';
+
+.wrapper {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.4);
+	visibility: hidden;
+	opacity: 0;
+	z-index: 99;
+}
+
+.activeRight {
+	opacity: 1;
+	display: flex;
+	visibility: visible;
+	justify-content: flex-end;
+}
+
+.activeMenuRight {
+	min-width: 50%;
+	height: 100%;
+	animation: menuFromRightA 1s 1;
+	box-shadow: 0px 2px 20px #000000;
+	background-color: $accent;
+}
+
+@keyframes menuFromRightA {
+	0% {
+		transform: translateX(100%);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+
+@keyframes menuFromButtonA {
+	0% {
+		transform: translateY(100%);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+
+@keyframes menuFromLeftA {
+	0% {
+		transform: translateX(-100%);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+
+@keyframes menuFromTopA {
+	0% {
+		transform: translateY(-100%);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+
+@keyframes wrapperEnd {
+	0% {
+		visibility: visible;
+	}
+	100% {
+		visibility: visible;
+	}
+}

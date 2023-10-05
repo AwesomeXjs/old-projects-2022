@@ -1,0 +1,81 @@
+@import '../../scss/variables';
+
+.container {
+	max-width: $container-width;
+	margin: 0 auto;
+}
+.title {
+	font-size: 1.65rem;
+	font-weight: 800;
+	margin-bottom: 24px;
+}
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	padding: 30px 25px;
+	background-color: #fff;
+	border-radius: $radius;
+	margin-bottom: 32px;
+}
+.textWrapper {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 16px;
+}
+.more {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.leftSide {
+	width: 46%;
+	margin-right: 32px;
+}
+.rightSide {
+	width: 50%;
+}
+.leftSide p,
+.rightSide p {
+	line-height: 1.1;
+	color: $special-text;
+	font-size: 14px;
+}
+.more {
+	color: $accent;
+	text-transform: uppercase;
+	font-size: 10px;
+	font-weight: 800;
+}
+.more p {
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+@include wide() {
+	//1350px --
+	.title {
+		padding: 0 20px;
+	}
+}
+
+@include desktop() {
+	// 992px--
+	.title {
+		font-size: 1rem;
+		text-align: center;
+	}
+	.leftSide,
+	.rightSide {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+}
+
+@include mobile() {
+	// 568px--
+	.item {
+		width: 100%;
+		margin: 0 auto;
+		margin-bottom: 10px;
+	}
+}

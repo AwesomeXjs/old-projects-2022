@@ -1,0 +1,87 @@
+// main:style.less
+
+.sponsors {
+    padding: 140px 0;
+    background-color: #FDD04A;
+   
+}
+
+.sponsors__content {
+    text-align: center;
+    max-width: 576px;
+    margin: 0 auto;
+}
+
+.sponsors__title {
+    position: relative;
+    color: #222730;
+    font-size: 3em;
+    margin-bottom: 48px;
+        &::after {
+            position: absolute;
+            content: "";
+            display: block;
+            width: 430px;
+            bottom: -.4em;
+            right: 0;
+            height: 20px;
+            background: url(../assets/icons/Blue__line.svg);
+            background-repeat: no-repeat;
+            background-position: center bottom;
+        }
+    
+}
+
+.sponsors__subtitle {
+    color: #555555;
+    font-size: 1em;
+    font-weight: 400;
+    margin-bottom: 41px;
+}
+
+.sponsors__logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    // padding: 2em;
+
+}
+
+.sponsors__logo {
+    width: 15%;
+}
+
+@media (max-width: 950px) {
+    .sponsors__logo {
+        width: 33.33%;
+    }
+}
+
+@media (max-width: 650px) {
+    .sponsors__logo {
+        width: 100%;
+    }
+
+    .sponsors__title {
+        position: relative;
+        color: #222730;
+        font-size: 1em;
+        margin-bottom: 20px;
+            &::after {
+                display: none;
+            }
+        
+    }
+
+    .sponsors__logos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .sponsors {
+        padding: 60px 0;
+    }
+}

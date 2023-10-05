@@ -1,0 +1,123 @@
+@import '../../../scss/_variables';
+
+.header {
+	background-color: #000;
+	z-index: 300;
+	padding: 10px 0;
+	&_container {
+		position: relative;
+		margin: 0 auto;
+		padding: 0 50px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		z-index: 200;
+	}
+}
+.headerIcons {
+	font-size: 2rem;
+	margin-left: 40px;
+	display: flex;
+	align-items: center;
+}
+.loginIcon {
+	margin-left: 30px;
+}
+
+.logoWrapper {
+	z-index: 300;
+}
+
+.hamburgerWrapper {
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+	transition: $transition;
+	padding-top: 5px;
+	border-radius: 0 0 20px 20px;
+	z-index: 2;
+}
+.hamburger,
+.hamburger::after,
+.hamburger::before {
+	height: 2px;
+	background-color: #fff;
+	transition: $transition;
+	border-radius: 5px;
+}
+.hamburger {
+	position: relative;
+	width: 50px;
+	display: inline-block;
+	&::after {
+		content: '';
+		position: absolute;
+		width: 100%;
+		bottom: -15px;
+	}
+	&::before {
+		content: '';
+		position: absolute;
+		width: 100%;
+		bottom: 15px;
+	}
+}
+
+.hamburgerWrapper:hover .hamburger,
+.hamburgerWrapper:hover .hamburger::after,
+.hamburgerWrapper:hover .hamburger::before {
+	background-color: $accent;
+}
+
+.hamburgerWrapper.active .hamburger {
+	background-color: transparent;
+}
+.hamburgerWrapper.active .hamburger::after {
+	transform: rotate(225deg);
+	bottom: 0;
+}
+.hamburgerWrapper.active .hamburger::before {
+	transform: rotate(-225deg);
+	bottom: 0;
+}
+
+.authMessage {
+	position: absolute;
+	top: 250%;
+	left: 50%;
+	background-color: rgba(43, 99, 50, 0.6);
+	width: 500px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	transform: translate(-50%);
+	align-items: center;
+	border-radius: $radius;
+	visibility: hidden;
+	opacity: 0;
+	padding: 0 50px;
+	animation: weclomeMessage 3s 1;
+	border: 2px solid #000;
+}
+.welcomeText {
+	margin-left: 20px;
+}
+
+@keyframes weclomeMessage {
+	0% {
+		opacity: 0;
+		visibility: visible;
+	}
+	30% {
+		opacity: 1;
+	}
+	80% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+		visibility: hidden;
+	}
+}
+
+@import './HeaderMedia.module.scss';

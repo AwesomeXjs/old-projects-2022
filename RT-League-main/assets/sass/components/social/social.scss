@@ -1,0 +1,99 @@
+.social {
+	margin-bottom: 100px;
+	&-title {
+	  font-size: 2.2rem;
+		font-weight: 500;
+		margin-bottom: 48px;
+	}
+	&-wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	&-item {
+		width: 30%;
+		margin: 20px;
+		cursor: pointer;
+		transition: $transition;
+		&:hover {
+			transform: translateY(-1em);
+			box-shadow: 20px 20px 10px 20px rgba(0, 0, 0, 0.2);
+		}
+		&-image {
+			display: flex;
+			justify-content: center;
+			padding: 30px 30px;
+			background-color: $background-special;
+			border-radius: 18px 18px 0 0;	
+		}
+		
+		&-car {
+			width: 100%;
+			height: auto;
+			z-index: 1;
+			transition: $transition;
+		}
+		&-text {
+			background-color: rgba(70, 70, 70, 0.3);
+			padding: 25px 15px;
+			border-radius: 0 0 18px 18px;
+			transition: $transition;
+			&-title {
+				font-size: 1.2rem;
+				font-weight: 500;
+			}
+			&-subtitle {
+				color: $special-color-text;
+			}
+		}
+	}
+
+	
+	
+}
+
+.social-item:hover .social-item-text {
+	color: $accent;
+}
+
+.social-item:hover .social-item-car {
+	filter: blur(2px) grayscale(1);
+	
+}
+
+.social-play {
+	position: absolute;
+	font-size: 3rem;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);
+	z-index: 2;
+	opacity: 0;
+	transition: $transition;
+}
+
+.social-item:hover .social-play {
+	opacity: 1;
+}
+.social-item-center {
+	transition: $transition;
+}
+.social-item:hover .social-item-center {
+	filter: blur(2px) grayscale(1);
+}
+
+
+.social-item2:hover {
+	transform: translateY(-1em);
+	box-shadow: 0 20px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.social-item3:hover {
+	transform: translateY(-1em);
+	box-shadow: -50px 20px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+

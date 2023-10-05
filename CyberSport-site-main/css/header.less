@@ -1,0 +1,175 @@
+// main:style.less
+.header__nav {
+   max-width: 1320px;
+   margin: 0 auto;
+}
+
+
+.burger__menu {
+    display: none;
+}
+.container__header {
+    // max-width: 1320px;
+    transition: 1s linear;
+    background-color: #000;
+    padding: 1em 2em 1em 2em;
+    margin: 0 auto;
+    position: sticky;
+    top: 0;
+    z-index: 2000;
+}
+
+.container__header.red {
+    background-color: red;
+}
+
+
+
+
+.nav {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+ 
+}
+
+
+
+.header__links {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__link {
+    
+    color: #fff;
+    font-weight: 400;
+    border-bottom: 2px solid transparent;
+    padding: 1em;
+    transition: .5s linear;
+   
+
+    &:hover {
+        color: #FAC422;
+        border-bottom: 2px solid #FAC422;
+    }
+   
+}
+.header__buy__contact {
+    display: flex;
+    align-items: center;
+}
+
+.header__buy-icon {
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        top: -1em;
+        right: -1em;
+        z-index: 1;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        background-color: red;
+    }
+}
+
+.header__button {
+    padding: .7em 2em;
+    font-size: 1.12em;
+    border: 1px solid white;
+    margin-left: 1.7em;
+    transition: .5s linear;
+    &:hover {
+        background-color: #f7c635;
+        color: #000;
+    }
+
+   
+}
+
+
+@media (max-width: 950px) {
+
+    .burger__menu {
+        position: sticky;
+        top: 0;
+        z-index: 2000;
+        display: block;
+    }
+    
+
+    .burger__header {
+        display: flex; 
+        justify-content: space-between;
+        padding: 1em;
+        background-color: #000;
+        align-items: center;
+    }
+
+    .container__header {
+        display: none;
+    }
+
+    .burger__icon {
+        display: flex;
+        align-items: center;
+    }
+
+    .burger__buy__icon {
+        margin-left: 1em;
+    }
+
+    .burger__header__links {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        background-color: #000;   
+    }
+
+    .burger__header__links {
+        max-width: 300px;
+        margin: 0 auto;
+        padding-bottom: 2em;
+        
+    }
+
+    .burger__menu__links {
+        background-color: #000;
+        display: none;
+        
+    }
+
+    .active__btn {
+        
+        border-bottom: 3px solid #f7c635;
+
+    }
+
+    .active__burger {
+        transition: .5s linear;
+        display: block;
+        
+    }
+
+    .burger__button {
+        padding: 1em;
+        background-color: #57B8FF;
+        transition: .5s linear;
+        &:hover {
+            background-color: #f7c635;
+            color: #000;
+        }
+    }
+
+    
+   
+
+    
+
+    
+}

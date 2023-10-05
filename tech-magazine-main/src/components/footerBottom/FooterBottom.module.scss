@@ -1,0 +1,39 @@
+@import '../../scss/variables';
+
+.bottom {
+	background-color: #141a38;
+}
+
+.container {
+	max-width: $container-width;
+	margin: 0 auto;
+}
+.wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	color: #fff;
+	justify-content: space-between;
+	font-family: $itemsFont;
+	font-size: 10px;
+	align-items: center;
+	padding: 36px 0;
+}
+.wrapper img {
+	max-width: 100px;
+}
+
+@include wide() {
+	//1350px --
+	.wrapper {
+		padding: 36px 20px;
+	}
+}
+
+@include desktop() {
+	// 992px--
+	.item {
+		width: 100%;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+}

@@ -1,0 +1,113 @@
+@import '../../../scss/variables';
+
+.sidebar {
+	max-width: 467px;
+	padding: 21px 18px;
+	background-color: #fff;
+	border-radius: $radius;
+	margin-right: 32px;
+}
+.linkItem {
+	display: flex;
+	justify-content: space-between;
+	cursor: pointer;
+	font-size: 13px;
+}
+.linkItemWrapper {
+	display: flex;
+	margin-bottom: 12px;
+	align-items: center;
+	border-bottom: 2px solid transparent;
+	padding-bottom: 10px;
+}
+.linkImg {
+	margin-right: 12px;
+}
+
+.arrow {
+	font-size: 2rem;
+	color: #f7f7f7;
+	transition: $transition;
+}
+
+.active {
+	color: $accent;
+}
+
+/* Hover */
+.hoverLinks {
+	// display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	position: relative;
+	overflow: hidden;
+}
+.hoverLinks:before {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	left: 0;
+	right: 100%;
+	bottom: 0;
+	background: $accent;
+	height: 2px;
+	-webkit-transition-property: right;
+	transition-property: right;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-timing-function: ease-out;
+	transition-timing-function: ease-out;
+}
+.hoverLinks:hover:before,
+.hoverLinks:focus:before,
+.hoverLinks:active:before {
+	right: 0;
+}
+
+@keyframes mobileMenu {
+	0% {
+		opacity: 0;
+		transform: translateY(-500px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@include wide() {
+	//1350px --
+	.sidebar {
+		position: absolute;
+		top: 2%;
+		right: 10%;
+		z-index: 500;
+		border: 2px solid $accent;
+		display: none;
+	}
+	.sidebarActive {
+		animation: mobileMenu 0.5s linear;
+		display: block;
+	}
+}
+
+@include desktop() {
+	// 992px--
+}
+@include tablet() {
+	// 768px--
+}
+@include mobile() {
+	// 568px--
+	.sidebar {
+		width: 100%;
+		top: 100%;
+		right: 0;
+		margin-right: 0;
+	}
+}
+@include mobile-s() {
+	// 414px--
+}

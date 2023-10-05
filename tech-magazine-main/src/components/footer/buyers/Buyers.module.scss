@@ -1,0 +1,49 @@
+@import '../../../scss/variables';
+
+.buyers {
+	display: flex;
+	flex-direction: column;
+	width: 15%;
+}
+.buyersTitle {
+	font-weight: 800;
+	margin-bottom: 23px;
+}
+.buyersLink {
+	color: $special-text;
+	font-family: $itemsFont;
+	margin-bottom: 8px;
+	font-size: 12px;
+	border-bottom: 1px solid transparent;
+	transition: $transition;
+	&:hover {
+		border-bottom: 1px solid $special-text;
+	}
+}
+
+@include wide() {
+	//1350px --
+	.buyers {
+		width: 33%;
+	}
+}
+
+@include desktop() {
+	// 992px--
+}
+@include tablet() {
+	// 768px--
+	.buyers {
+		width: 50%;
+	}
+}
+@include mobile() {
+	// 568px--
+	.buyers {
+		width: 100%;
+		align-items: center;
+	}
+}
+@include mobile-s() {
+	// 414px--
+}

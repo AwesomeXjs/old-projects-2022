@@ -1,0 +1,56 @@
+// main: style.less
+
+.photograhper {
+    width: 100%;
+    min-height: 540px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.black__block {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 7.14em;
+}
+
+.photograph__block {
+    width: 50%;
+    background: url(../assets/image/Photo.jpg) center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.block__suptitle {
+    color: #C0C0C0;
+    font-size: 1em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.block__title {
+    font-size: 2em;
+    color: #fff;
+}
+
+@media (max-width: 900px) {
+    .black__block {
+        width: 100%;
+        padding: 5em 2em;
+    }
+
+    .photograph__block {
+        width: 100%;
+        min-height: 514px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    
+}
+
